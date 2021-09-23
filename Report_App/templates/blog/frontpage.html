@@ -1,0 +1,52 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="post block">
+            <h2 class="subtitle">{{ post.title }}</h2>
+
+            <small>Yayınlanma Tarihi {{ post.date_added }}</small>
+
+            <p>{{ post.intro }}</p>
+            <p>Herkes Görebılır/Yetki Yok</p>
+
+            
+            <a href="{% url 'post_detail' post.slug %}">Görsellestirmeye Yorum Ekle</a>
+        </div>
+
+    {% endfor %}
+{% endblock %}
+
+{% block content1 %}
+    
+
+
+   
+   
+{% endblock %}
+{% block content2 %}
+    
+    <a href="https://www.linkedin.com/in/hamza-u%C4%9Fur-sakarya-990469174/">Linkedin Profilim</a>&nbsp;
+
+    
+    
+    
+{% endblock %}
+
+{% block content3 %}
+
+    <a href="https://github.com/ugursakarya0707">Github Profilim</a>
+    
+
+
+   
+   
+{% endblock %}
+{% block content4 %}
+
+<p>
+<iframe width="1000" height="1000" src="https://app.powerbi.com/groups/me/reports/104eb763-3da1-46b1-a197-5f9050d01032?ctid=3437b482-3cee-4702-9974-e38bb7551543&pbi_source=linkShare">
+
+</p>
+                            
+{% endblock %}
